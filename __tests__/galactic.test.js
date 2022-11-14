@@ -6,5 +6,4 @@ describe ('GalacticBirthCalc', ()=> {
     const gBirthCalc = new GalacticBirthCalc(53);
     expect(gBirthCalc.age).toEqual(53);
   });
-
 });
