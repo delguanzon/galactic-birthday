@@ -20,7 +20,7 @@ describe ('GalacticBirthCalc', ()=> {
   });
 
   beforeEach(() => {
-    let gBirthCalcRe = new GalacticBirthCalc(100);
+    gBirthCalcRe = new GalacticBirthCalc(100);
   });
 
   test("Convert earth age to mercury age", () => {    
