@@ -31,4 +31,8 @@ describe ('GalacticBirthCalc', ()=> {
     expect(gBirthCalcRe.getVenusAge()).toEqual(62);
   });
 
+  test("Convert Earth age to Mars age", () => {    
+    expect(gBirthCalcRe.getMarsAge()).toEqual(188);
+  });
+
 });
