@@ -2,6 +2,8 @@ import GalacticBirthCalc from './../src/js/galactic.js';
 
 describe ('GalacticBirthCalc', ()=> {
 
+  let gBirthCalcRe;
+
   test("should create a GalacticBirthdayCalc object with the user's age in years", ()=> {
     const gBirthCalc = new GalacticBirthCalc(53);
     expect(gBirthCalc.age).toEqual(53);
@@ -18,11 +20,11 @@ describe ('GalacticBirthCalc', ()=> {
   });
 
   beforeEach(() => {
-    let gBirthCalc = new GalacticBirthCalc(100);
+    let gBirthCalcRe = new GalacticBirthCalc(100);
   });
 
   test("Convert earth age to mercury age", () => {    
-    expect(gBirthCalc.getMercuryAge()).toEqual(24);
+    expect(gBirthCalcRe.getMercuryAge()).toEqual(24);
   });
 
 });
