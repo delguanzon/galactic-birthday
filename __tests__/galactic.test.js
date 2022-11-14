@@ -17,4 +17,12 @@ describe ('GalacticBirthCalc', ()=> {
     expect(gBirthCalc.age).toEqual("NaN");
   });
 
+  beforeEach(() => {
+    let gBirthCalc = new GalacticBirthCalc(100);
+  });
+
+  test("Convert earth age to mercury age", () => {    
+    expect(gBirthCalc.getMercuryAge()).toEqual(24);
+  });
+
 });
