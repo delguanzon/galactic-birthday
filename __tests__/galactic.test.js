@@ -28,7 +28,7 @@ describe ('GalacticBirthCalc', ()=> {
   });
 
   test("Convert earth age to venus age", () => {    
-    expect(gBirthCalcRe.getMercuryAge()).toEqual(62);
+    expect(gBirthCalcRe.getVenusAge()).toEqual(62);
   });
 
 });

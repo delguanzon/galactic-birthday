@@ -11,4 +11,8 @@ export default class GalacticBirthCalc {
   getMercuryAge(){
     return this.age*0.24;
   }
+
+  getVenusAge(){
+    return this.age*0.62;
+  }
 }
