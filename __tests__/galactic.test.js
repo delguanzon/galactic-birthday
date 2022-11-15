@@ -92,4 +92,8 @@ describe ('GalacticBirthCalc', ()=> {
     expect(gBirthCalcRe.getZodiacExp('pisces')).toEqual(69);
     expect(gBirthCalcRe.getZodiacExp('PISCES')).toEqual(69);
   });
+
+  test("should return the user's remaining years on earth", () => {
+    expect(gBirthCalcRe.getYearsLeft('Pisces','Earth')).toEqual(31);
+  });
 });
