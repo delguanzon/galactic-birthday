@@ -50,7 +50,10 @@ export default class GalacticBirthCalc {
       ['Mars',1.88],
       ['Jupiter',11.86]
     ]);
-    return Number(((this.age - this.getZodiacExp(zodiac)) * planetMap.get(planet)).toFixed(2));
+    if(this.age > this.getZodiacExp(zodiac)) {
+      return Number(((this.age - this.getZodiacExp(zodiac)) * planetMap.get(planet)).toFixed(2));
+    }
+    return Number(((this.getZodiacExp(zodiac) - this.age) * planetMap.get(planet)).toFixed(2));
 
   }
 }
