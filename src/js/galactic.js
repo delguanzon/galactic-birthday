@@ -24,7 +24,7 @@ export default class GalacticBirthCalc {
     return this.age*11.86;
   }
 
-  getRemainingYears(zodiac) {
+  getZodiacExp(zodiac) {
     const zodiacMap = new Map ([
       ['aries',91],
       ['taurus',87],
