@@ -117,7 +117,8 @@ describe('GalacticBirthCalc', () => {
     expect(gBirthCalcRe.getYearsLeft('Pisces', 'Mercury')).toEqual(7.44);
   });
 
-  beforeEach(() => {
+  test("should display the user's remaining years on earth", () => {
     gBirthCalcRe = new GalacticBirthCalc(30);
+    expect(gBirthCalcRe.getYearsLeft('Pisces', 'Earth')).toEqual(39);
   });
 });
