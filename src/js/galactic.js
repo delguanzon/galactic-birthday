@@ -24,8 +24,8 @@ export default class GalacticBirthCalc {
     return this.age*11.86;
   }
 
-  getRemainingYears(horoscope) {
-    const horoscopeMap = new Map ([
+  getRemainingYears(zodiac) {
+    const zodiacMap = new Map ([
       ['Aries',91],
       ['Taurus',87],
       ['Gemini',77],
@@ -39,6 +39,6 @@ export default class GalacticBirthCalc {
       ['Pisces',69],
       ['Aquarius',89],
     ]);
-    return horoscopeMap.get(horoscope);
+    return zodiacMap.get(zodiac);
   }
 }
