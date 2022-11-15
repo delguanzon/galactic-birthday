@@ -25,6 +25,9 @@ export default class GalacticBirthCalc {
   }
 
   getRemainingYears(horoscope) {
-    return 80;
+    const horoscopeMap = new Map ([
+      ['Aquarius',89]
+    ]);
+    return horoscopeMap.get(horoscope);
   }
 }

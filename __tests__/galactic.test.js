@@ -39,15 +39,6 @@ describe ('GalacticBirthCalc', ()=> {
     expect(gBirthCalcRe.getJupiterAge()).toEqual(1186);
   });
 
-  test("Convert Earth age to Jupiter age", () => {    
-    expect(gBirthCalcRe.getJupiterAge()).toEqual(1186);
-  });
-
-  test("Should set the object's horoscope", () => {
-    gBirthCalcRe.setHoroscope('Capricorn');
-    expect(gBirthCalcRe.horoscope).toEqual('Capricorn');
-  });
-
   test("should tell how much the user's left to live based on their horoscope", () => {
     expect(gBirthCalcRe.getRemainingYears('libra')).toEqual(80);
   });
