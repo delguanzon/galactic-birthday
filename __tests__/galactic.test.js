@@ -39,10 +39,6 @@ describe ('GalacticBirthCalc', ()=> {
     expect(gBirthCalcRe.getJupiterAge()).toEqual(1186);
   });
 
-  test("should tell how much the user's left to live based on their horoscope", () => {
-    expect(gBirthCalcRe.getRemainingYears('libra')).toEqual(80);
-  });
-
   test("Tell that the life expectancy for Aquarius is 89", () => {
     expect(gBirthCalcRe.getRemainingYears('Aquarius')).toEqual(89);
   });
