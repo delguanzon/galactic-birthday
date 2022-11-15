@@ -43,17 +43,18 @@ export default class GalacticBirthCalc {
   }
 
   getYearsLeft(zodiac, planet){
+    const planetName = planet.toLowerCase();
     const planetMap = new Map ([
-      ['Earth',1],
-      ['Mercury',0.24],
-      ['Venus',0.62],
-      ['Mars',1.88],
-      ['Jupiter',11.86]
+      ['earth',1],
+      ['mercury',0.24],
+      ['venus',0.62],
+      ['mars',1.88],
+      ['jupiter',11.86]
     ]);
     if(this.age > this.getZodiacExp(zodiac)) {
-      return Number(((this.age - this.getZodiacExp(zodiac)) * planetMap.get(planet)).toFixed(2));
+      return Number(((this.age - this.getZodiacExp(zodiac)) * planetMap.get(planetName)).toFixed(2));
     }
-    return Number(((this.getZodiacExp(zodiac) - this.age) * planetMap.get(planet)).toFixed(2));
+    return Number(((this.getZodiacExp(zodiac) - this.age) * planetMap.get(planetName)).toFixed(2));
 
   }
 }
