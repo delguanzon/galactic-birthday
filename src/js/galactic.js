@@ -19,4 +19,9 @@ export default class GalacticBirthCalc {
   getMarsAge(){
     return this.age*1.88;
   }
+
+  getJupiterAge(){
+    return this.age*11.86;
+  }
+
 }
