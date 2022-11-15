@@ -102,7 +102,7 @@ describe ('GalacticBirthCalc', ()=> {
   });
 
   test("should return the user's remaining years on mercury", () => {
-    expect(gBirthCalcRe.getYearsLeft('Pisces','Mercury')).toEqual(10.54);
+    expect(gBirthCalcRe.getYearsLeft('Pisces','Mercury')).toEqual(7.44);
   });
 
   test("should return the user's remaining years on mars", () => {
@@ -111,5 +111,9 @@ describe ('GalacticBirthCalc', ()=> {
 
   test("should return the user's remaining years on jupiter", () => {
     expect(gBirthCalcRe.getYearsLeft('Pisces','Jupiter')).toEqual(367.66);
+  });
+
+  test("should round the user's remaining to two decimal places", () => {
+    expect(gBirthCalcRe.getYearsLeft('Pisces','Mercury')).toEqual(7.44)
   });
 });
