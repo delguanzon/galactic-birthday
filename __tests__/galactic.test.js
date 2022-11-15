@@ -96,4 +96,20 @@ describe ('GalacticBirthCalc', ()=> {
   test("should return the user's remaining years on earth", () => {
     expect(gBirthCalcRe.getYearsLeft('Pisces','Earth')).toEqual(31);
   });
+
+  test("should return the user's remaining years on venus", () => {
+    expect(gBirthCalcRe.getYearsLeft('Pisces','Venus')).toEqual(19.22);
+  });
+
+  test("should return the user's remaining years on mercury", () => {
+    expect(gBirthCalcRe.getYearsLeft('Pisces','Mercury')).toEqual(10.54);
+  });
+
+  test("should return the user's remaining years on mars", () => {
+    expect(gBirthCalcRe.getYearsLeft('Pisces','Mars')).toEqual(58.28);
+  });
+
+  test("should return the user's remaining years on jupiter", () => {
+    expect(gBirthCalcRe.getYearsLeft('Pisces','Jupiter')).toEqual(367.66);
+  });
 });
