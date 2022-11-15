@@ -42,4 +42,48 @@ describe ('GalacticBirthCalc', ()=> {
   test("Tell that the life expectancy for Aquarius is 89", () => {
     expect(gBirthCalcRe.getRemainingYears('Aquarius')).toEqual(89);
   });
+
+  test("Tell that the life expectancy for Taurus is 89", () => {
+    expect(gBirthCalcRe.getRemainingYears('Taurus')).toEqual(87);
+  });
+
+  test("Tell that the life expectancy for Aries is 91", () => {
+    expect(gBirthCalcRe.getRemainingYears('Aries')).toEqual(91);
+  });
+
+  test("Tell that the life expectancy for Gemini is 77", () => {
+    expect(gBirthCalcRe.getRemainingYears('Gemini')).toEqual(77);
+  });
+
+  test("Tell that the life expectancy for Cancer is 55", () => {
+    expect(gBirthCalcRe.getRemainingYears('Cancer')).toEqual(55);
+  });
+
+  test("Tell that the life expectancy for Leo is 67", () => {
+    expect(gBirthCalcRe.getRemainingYears('Leo')).toEqual(67);
+  });
+
+  test("Tell that the life expectancy for Virgo is 91", (89) => {
+    expect(gBirthCalcRe.getRemainingYears('Virgo')).toEqual(89);
+  });
+
+  test("Tell that the life expectancy for Libra is 104", () => {
+    expect(gBirthCalcRe.getRemainingYears('Libra')).toEqual(104);
+  });
+
+  test("Tell that the life expectancy for Scorpio is 66", () => {
+    expect(gBirthCalcRe.getRemainingYears('Scorpio')).toEqual(66);
+  });
+
+  test("Tell that the life expectancy for Sagittarius is 65", () => {
+    expect(gBirthCalcRe.getRemainingYears('Sagittarius')).toEqual(65);
+  });
+
+  test("Tell that the life expectancy for Capricorn is 101", () => {
+    expect(gBirthCalcRe.getRemainingYears('Capricorn')).toEqual(101);
+  });
+
+  test("Tell that the life expectancy for Pisces is 69", () => {
+    expect(gBirthCalcRe.getRemainingYears('Pisces')).toEqual(69);
+  });
 });
