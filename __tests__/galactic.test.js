@@ -48,7 +48,7 @@ describe ('GalacticBirthCalc', ()=> {
     expect(gBirthCalcRe.horoscope).toEqual('Capricorn');
   });
 
-  test("should tell how much the user's left to live", () => {
+  test("should tell how much the user's left to live based on their horoscope", () => {
     expect(gBirthCalcRe.getRemainingYears()).toEqual(80);
   });
 });
