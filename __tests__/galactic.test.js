@@ -1,10 +1,10 @@
 import GalacticBirthCalc from './../src/js/galactic.js';
 
-describe ('GalacticBirthCalc', ()=> {
+describe('GalacticBirthCalc', () => {
 
   let gBirthCalcRe;
 
-  test("should create a GalacticBirthdayCalc object with the user's age in years", ()=> {
+  test("should create a GalacticBirthdayCalc object with the user's age in years", () => {
     const gBirthCalc = new GalacticBirthCalc(53);
     expect(gBirthCalc.age).toEqual(53);
   });
@@ -23,19 +23,19 @@ describe ('GalacticBirthCalc', ()=> {
     gBirthCalcRe = new GalacticBirthCalc(100);
   });
 
-  test("Convert earth age to mercury age", () => {    
+  test("Convert earth age to mercury age", () => {
     expect(gBirthCalcRe.getMercuryAge()).toEqual(24);
   });
 
-  test("Convert earth age to venus age", () => {    
+  test("Convert earth age to venus age", () => {
     expect(gBirthCalcRe.getVenusAge()).toEqual(62);
   });
 
-  test("Convert Earth age to Mars age", () => {    
+  test("Convert Earth age to Mars age", () => {
     expect(gBirthCalcRe.getMarsAge()).toEqual(188);
   });
 
-  test("Convert Earth age to Jupiter age", () => {    
+  test("Convert Earth age to Jupiter age", () => {
     expect(gBirthCalcRe.getJupiterAge()).toEqual(1186);
   });
 
@@ -93,27 +93,31 @@ describe ('GalacticBirthCalc', ()=> {
     expect(gBirthCalcRe.getZodiacExp('PISCES')).toEqual(69);
   });
 
-  test("should return the user's remaining years on earth", () => {
-    expect(gBirthCalcRe.getYearsLeft('Pisces','Earth')).toEqual(31);
+  test("should display the user's surpassed years on earth", () => {
+    expect(gBirthCalcRe.getYearsLeft('Pisces', 'Earth')).toEqual(31);
   });
 
-  test("should return the user's remaining years on venus", () => {
-    expect(gBirthCalcRe.getYearsLeft('Pisces','Venus')).toEqual(19.22);
+  test("should display the user's surpassed years on venus", () => {
+    expect(gBirthCalcRe.getYearsLeft('Pisces', 'Venus')).toEqual(19.22);
   });
 
-  test("should return the user's remaining years on mercury", () => {
-    expect(gBirthCalcRe.getYearsLeft('Pisces','Mercury')).toEqual(7.44);
+  test("should display the user's surpassed years on mercury", () => {
+    expect(gBirthCalcRe.getYearsLeft('Pisces', 'Mercury')).toEqual(7.44);
   });
 
-  test("should return the user's remaining years on mars", () => {
-    expect(gBirthCalcRe.getYearsLeft('Pisces','Mars')).toEqual(58.28);
+  test("should display the user's surpassed years on mars", () => {
+    expect(gBirthCalcRe.getYearsLeft('Pisces', 'Mars')).toEqual(58.28);
   });
 
-  test("should return the user's remaining years on jupiter", () => {
-    expect(gBirthCalcRe.getYearsLeft('Pisces','Jupiter')).toEqual(367.66);
+  test("should display the user's surpassed years on jupiter", () => {
+    expect(gBirthCalcRe.getYearsLeft('Pisces', 'Jupiter')).toEqual(367.66);
   });
 
-  test("should round the user's remaining to two decimal places", () => {
-    expect(gBirthCalcRe.getYearsLeft('Pisces','Mercury')).toEqual(7.44);
+  test("should round the user's surpassed years to two decimal places", () => {
+    expect(gBirthCalcRe.getYearsLeft('Pisces', 'Mercury')).toEqual(7.44);
+  });
+
+  beforeEach(() => {
+    gBirthCalcRe = new GalacticBirthCalc(30);
   });
 });
