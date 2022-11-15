@@ -43,7 +43,7 @@ describe ('GalacticBirthCalc', ()=> {
     expect(gBirthCalcRe.getRemainingYears('Aquarius')).toEqual(89);
   });
 
-  test("Tell that the life expectancy for Taurus is 89", () => {
+  test("Tell that the life expectancy for Taurus is 87", () => {
     expect(gBirthCalcRe.getRemainingYears('Taurus')).toEqual(87);
   });
 
@@ -63,7 +63,7 @@ describe ('GalacticBirthCalc', ()=> {
     expect(gBirthCalcRe.getRemainingYears('Leo')).toEqual(67);
   });
 
-  test("Tell that the life expectancy for Virgo is 91", (89) => {
+  test("Tell that the life expectancy for Virgo is 91", () => {
     expect(gBirthCalcRe.getRemainingYears('Virgo')).toEqual(89);
   });
 
