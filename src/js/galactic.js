@@ -26,19 +26,19 @@ export default class GalacticBirthCalc {
 
   getRemainingYears(zodiac) {
     const zodiacMap = new Map ([
-      ['Aries',91],
-      ['Taurus',87],
-      ['Gemini',77],
-      ['Cancer',55],
-      ['Leo',67],
-      ['Virgo',89],
-      ['Libra',104],
-      ['Scorpio',66],
-      ['Sagittarius',65],
-      ['Capricorn',101],
-      ['Pisces',69],
-      ['Aquarius',89],
+      ['aries',91],
+      ['taurus',87],
+      ['gemini',77],
+      ['cancer',55],
+      ['leo',67],
+      ['virgo',89],
+      ['libra',104],
+      ['scorpio',66],
+      ['sagittarius',65],
+      ['capricorn',101],
+      ['pisces',69],
+      ['aquarius',89],
     ]);
-    return zodiacMap.get(zodiac);
+    return zodiacMap.get(zodiac.toLowerCase());
   }
 }
