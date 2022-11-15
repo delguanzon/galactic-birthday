@@ -48,4 +48,12 @@ describe ('GalacticBirthCalc', ()=> {
     expect(gBirthCalcRe.horoscope).toEqual('Capricorn');
   });
 
+  test("Should set the object's horoscope", () => {
+    gBirthCalcRe.setHoroscope('Capricorn');
+    expect(gBirthCalcRe.horoscope).toEqual('Capricorn');
+  });
+
+  test("should how much the user's left to live", () => {
+    expect(gBirthCalcRe.getRemainingYears()).toEqual(80);
+  });
 });

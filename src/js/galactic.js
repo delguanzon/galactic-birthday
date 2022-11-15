@@ -27,5 +27,4 @@ export default class GalacticBirthCalc {
   setHoroscope(horoscope){
     this.horoscope = horoscope;
   }
-
 }
