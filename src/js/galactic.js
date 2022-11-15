@@ -44,9 +44,13 @@ export default class GalacticBirthCalc {
 
   getYearsLeft(zodiac, planet){
     const planetMap = new Map ([
-      ['Earth',1]
+      ['Earth',1],
+      ['Mercury',0.24],
+      ['Venus',0.62],
+      ['Mars',1.88],
+      ['Jupiter',11.86]
     ]);
-    return this.age - this.getZodiacExp(zodiac) * planetMap.get(planet);
+    return (this.age - this.getZodiacExp(zodiac)) * planetMap.get(planet);
 
   }
 }
