@@ -114,6 +114,6 @@ describe ('GalacticBirthCalc', ()=> {
   });
 
   test("should round the user's remaining to two decimal places", () => {
-    expect(gBirthCalcRe.getYearsLeft('Pisces','Mercury')).toEqual(7.44)
+    expect(gBirthCalcRe.getYearsLeft('Pisces','Mercury')).toEqual(7.44);
   });
 });
