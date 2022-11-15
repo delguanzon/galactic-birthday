@@ -24,7 +24,7 @@ export default class GalacticBirthCalc {
     return this.age*11.86;
   }
 
-  getRemainingYears() {
+  getRemainingYears(horoscope) {
     return 80;
   }
 }
