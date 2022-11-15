@@ -15,4 +15,8 @@ export default class GalacticBirthCalc {
   getVenusAge(){
     return this.age*0.62;
   }
+
+  getMarsAge(){
+    return this.age*1.88;
+  }
 }
