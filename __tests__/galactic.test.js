@@ -49,6 +49,6 @@ describe ('GalacticBirthCalc', ()=> {
   });
 
   test("should tell how much the user's left to live based on their horoscope", () => {
-    expect(gBirthCalcRe.getRemainingYears()).toEqual(80);
+    expect(gBirthCalcRe.getRemainingYears('libra')).toEqual(80);
   });
 });
