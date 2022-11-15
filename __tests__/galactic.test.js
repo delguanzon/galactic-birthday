@@ -39,4 +39,14 @@ describe ('GalacticBirthCalc', ()=> {
     expect(gBirthCalcRe.getJupiterAge()).toEqual(1186);
   });
 
+  test("Convert Earth age to Jupiter age", () => {    
+    expect(gBirthCalcRe.getJupiterAge()).toEqual(1186);
+  });
+
+  test("Should set the object's horoscope", () => {
+    gBirthCalcRe.setHoroscope('Capricorn');
+    expect(gBirthCalcRe.horoscope).toEqual('Capricorn');
+
+  });
+
 });
