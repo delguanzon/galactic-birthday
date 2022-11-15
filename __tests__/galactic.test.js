@@ -35,4 +35,8 @@ describe ('GalacticBirthCalc', ()=> {
     expect(gBirthCalcRe.getMarsAge()).toEqual(188);
   });
 
+  test("Convert Earth age to Jupiter age", () => {    
+    expect(gBirthCalcRe.getJupiterAge()).toEqual(1186);
+  });
+
 });
