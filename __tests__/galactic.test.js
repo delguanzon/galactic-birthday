@@ -146,4 +146,11 @@ describe('GalacticBirthCalc', () => {
     gBirthCalcRe = new GalacticBirthCalc(30);
     expect(gBirthCalcRe.getYearsLeft('Pisces', 'Jupiter')).toEqual(462.54);
   });
+
+  test("should display the user's remaining/surpassed years regardless of planet letter case", () => {
+    gBirthCalcRe = new GalacticBirthCalc(30);
+    expect(gBirthCalcRe.getYearsLeft('Pisces', 'Jupiter')).toEqual(462.54);
+    expect(gBirthCalcRe.getYearsLeft('Pisces', 'JUPITER')).toEqual(462.54);
+    expect(gBirthCalcRe.getYearsLeft('Pisces', 'jupiter')).toEqual(462.54);
+  });
 });
