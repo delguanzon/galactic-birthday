@@ -46,7 +46,6 @@ describe ('GalacticBirthCalc', ()=> {
   test("Should set the object's horoscope", () => {
     gBirthCalcRe.setHoroscope('Capricorn');
     expect(gBirthCalcRe.horoscope).toEqual('Capricorn');
-
   });
 
 });
