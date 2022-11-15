@@ -29,6 +29,6 @@ export default class GalacticBirthCalc {
   }
 
   getRemainingYears() {
-  
+    return 88;
   }
 }
