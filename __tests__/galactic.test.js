@@ -86,4 +86,10 @@ describe ('GalacticBirthCalc', ()=> {
   test("Tell that the life expectancy for Pisces is 69", () => {
     expect(gBirthCalcRe.getRemainingYears('Pisces')).toEqual(69);
   });
+
+  test("Tell the life expectancy of a zodiac regardless of letter cases", () => {
+    expect(gBirthCalcRe.getRemainingYears('Pisces')).toEqual(69);
+    expect(gBirthCalcRe.getRemainingYears('pisces')).toEqual(69);
+    expect(gBirthCalcRe.getRemainingYears('PISCES')).toEqual(69);
+  });
 });
