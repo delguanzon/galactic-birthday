@@ -41,4 +41,12 @@ export default class GalacticBirthCalc {
     ]);
     return zodiacMap.get(zodiac.toLowerCase());
   }
+
+  getYearsLeft(zodiac, planet){
+    const planetMap = new Map ([
+      ['Earth',1]
+    ]);
+    return this.age - this.getZodiacExp(zodiac) * planetMap.get(planet);
+
+  }
 }
