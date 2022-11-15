@@ -8,9 +8,13 @@
 
 * Git
 * HTML
-* CSS
 * Javascript
-* Bootstrap
+* NodeJS
+* ESLint
+* JEST
+* Babel
+* Webpack
+* Html Loader
 
 ## Description
 
@@ -26,14 +30,14 @@ A Super Galactic Age Calculator that converts Earth Year/Age into Planetary Age 
 * Clone this repository on your desktop
 * Navigate to the top level of the directory using bash or cmd
 * Run ``` $npm install ``` to install dependencies
-* To test, use ```npm run test``
-* For building and live preview, use ```npm run start``
+* To test, use ```npm run test```
+* For building and live preview, use ```npm run start```
 
 ## Known Bugs
 
 * None
 
-Found a bug? Email me at Yodel Guanzon <yodelguanzon@gmail.com>
+Found a bug? Email me at <yodelguanzon@gmail.com>
 
 ## License
 
