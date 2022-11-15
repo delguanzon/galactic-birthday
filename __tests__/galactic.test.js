@@ -136,4 +136,9 @@ describe('GalacticBirthCalc', () => {
     gBirthCalcRe = new GalacticBirthCalc(30);
     expect(gBirthCalcRe.getYearsLeft('Pisces', 'Mercury')).toEqual(9.36);
   });
+
+  test("should display the user's remaining years on Mars", () => {
+    gBirthCalcRe = new GalacticBirthCalc(30);
+    expect(gBirthCalcRe.getYearsLeft('Pisces', 'Mars')).toEqual(73.32);
+  });
 });
