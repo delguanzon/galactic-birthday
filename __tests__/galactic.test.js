@@ -17,6 +17,7 @@ describe('GalacticBirthCalc', () => {
 
   test("should display NaN if the user entered a non-numerical value", () => {
     const gBirthCalc = new GalacticBirthCalc('fifty three');
+    expect(gBirthCalc.validateAge()).toEqual("NaN");
     expect(gBirthCalc.age).toEqual("NaN");
   });
 
