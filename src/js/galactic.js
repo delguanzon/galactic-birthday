@@ -12,19 +12,23 @@ export default class GalacticBirthCalc {
   }
 
   getMercuryAge() {
-    return this.age * 0.24;
+    let age = this.validateAge();
+    return age * 0.24;
   }
 
   getVenusAge() {
-    return this.age * 0.62;
+    let age = this.validateAge();
+    return age * 0.62;
   }
 
   getMarsAge() {
-    return this.age * 1.88;
+    let age = this.validateAge();
+    return age * 1.88;
   }
 
   getJupiterAge() {
-    return this.age * 11.86;
+    let age = this.validateAge();
+    return age * 11.86;
   }
 
   getZodiacExp(zodiac) {
@@ -47,6 +51,7 @@ export default class GalacticBirthCalc {
 
   getYearsLeft(zodiac, planet) {
     const planetName = planet.toLowerCase();
+    let age = this.validateAge();
     const planetMap = new Map([
       ['earth', 1],
       ['mercury', 0.24],
@@ -54,10 +59,10 @@ export default class GalacticBirthCalc {
       ['mars', 1.88],
       ['jupiter', 11.86]
     ]);
-    if (this.age > this.getZodiacExp(zodiac)) {
-      return Number(((this.age - this.getZodiacExp(zodiac)) * planetMap.get(planetName)).toFixed(2));
+    if (age > this.getZodiacExp(zodiac)) {
+      return Number(((age - this.getZodiacExp(zodiac)) * planetMap.get(planetName)).toFixed(2));
     }
-    return Number(((this.getZodiacExp(zodiac) - this.age) * planetMap.get(planetName)).toFixed(2));
+    return Number(((this.getZodiacExp(zodiac) - age) * planetMap.get(planetName)).toFixed(2));
 
   }
 }
