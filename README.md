@@ -25,6 +25,8 @@ A Super Galactic Age Calculator that converts Earth Year/Age into Planetary Age 
 * Returns their age in Mars years. (A Mars year is 1.88 Earth years.)
 * Returns their age in Jupiter years. (A Jupiter year is 11.86 Earth years.)
 
+It would also return the remaining years based on the user's age and zodiac sign for each planet and the number of years lived past if they surpassed the life expectancy for their zodiac sign.
+
 ## Setup/Installation Requirements
 
 * Clone this repository on your desktop

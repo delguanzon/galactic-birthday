@@ -9,9 +9,9 @@ describe('GalacticBirthCalc', () => {
     expect(gBirthCalc.age).toEqual(53);
   });
 
-  test("should display NaN if the user did not enter a number", () => {
-    const gBirthCalc = new GalacticBirthCalc();
-    expect(gBirthCalc.age).toEqual(0);
+  test("should display 0 if the user did not enter a number", () => {
+    const gBirthCalc = new GalacticBirthCalc();    
+    expect(gBirthCalc.validateAge()).toEqual(0);
   });
 
   test("should display NaN if the user entered a non-numerical value", () => {
