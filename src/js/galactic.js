@@ -12,22 +12,22 @@ export default class GalacticBirthCalc {
   }
 
   getMercuryAge() {
-    let age = this.validateAge();
+    const age = this.validateAge();
     return age * 0.24;
   }
 
   getVenusAge() {
-    let age = this.validateAge();
+    const age = this.validateAge();
     return age * 0.62;
   }
 
   getMarsAge() {
-    let age = this.validateAge();
+    const age = this.validateAge();
     return age * 1.88;
   }
 
   getJupiterAge() {
-    let age = this.validateAge();
+    const age = this.validateAge();
     return age * 11.86;
   }
 
@@ -51,7 +51,7 @@ export default class GalacticBirthCalc {
 
   getYearsLeft(zodiac, planet) {
     const planetName = planet.toLowerCase();
-    let age = this.validateAge();
+    const age = this.validateAge();
     const planetMap = new Map([
       ['earth', 1],
       ['mercury', 0.24],
